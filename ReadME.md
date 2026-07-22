@@ -115,19 +115,17 @@ Building both versions provides a practical understanding of how each layout sys
 
 > Replace the placeholders below with screenshots after completing the project.
 
-## 🖥️ Flexbox Version
+# 📸 Preview
 
-```
-📷 Add Screenshot Here
-```
+## 🔹 Flexbox Version
 
-## 🖥️ CSS Grid Version
+![Flexbox Desktop](screenshots/flexbox-desktop.png)
 
-```
-📷 Add Screenshot Here
-```
+## 🔹 CSS Grid Version
 
----
+![Grid Desktop](screenshots/grid-desktop.png)
+
+
 
 # 📱 Responsive Design
 
