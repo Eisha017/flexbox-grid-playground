@@ -111,9 +111,7 @@ Building both versions provides a practical understanding of how each layout sys
 
 ---
 
-# 📸 Preview
 
-> Replace the placeholders below with screenshots after completing the project.
 
 # 📸 Preview
 
