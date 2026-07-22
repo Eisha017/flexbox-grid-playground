@@ -117,11 +117,11 @@ Building both versions provides a practical understanding of how each layout sys
 
 ## 🔹 Flexbox Version
 
-![Flexbox Desktop](screenshots/flexbox-desktop.png)
+![Flexbox Desktop](screenshots/layout-flexbox.png)
 
 ## 🔹 CSS Grid Version
 
-![Grid Desktop](screenshots/grid-desktop.png)
+![Grid Desktop](screenshots/layout-grid.png)
 
 
 
