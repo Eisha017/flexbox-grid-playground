@@ -5,198 +5,645 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <title>Responsive Pricing Layout - CSS Grid</title>
+    <meta
+        name="description"
+        content="Learn CSS Grid through practical layouts, interactive examples and responsive design.">
 
-    <!-- Google Font -->
+    <title>CSS Grid Playground | Responsive Layouts</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css">
 
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<!-- ==========================================
+                HERO
+========================================== -->
 
-    <header>
+<header>
 
-        <h1>Our Pricing Plans</h1>
+    <div class="hero-content">
 
-        <p>
-            Flexible pricing for individuals, startups, and growing businesses.
-            Choose the perfect plan that fits your needs.
-        </p>
+        <span class="hero-badge">
 
-    </header>
+            🧩 Frontend Layout Project
 
-    <!-- ================= PRICING SECTION ================= -->
+        </span>
 
-    <section class="pricing-section">
+        <h1>
 
-        <!-- Basic -->
+            CSS Grid Playground
 
-        <div class="pricing-card">
-
-            <h2>Basic</h2>
-
-            <p class="price">$9<span>/month</span></p>
-
-            <ul>
-
-                <li>✔ 1 Website</li>
-
-                <li>✔ 5 GB Storage</li>
-
-                <li>✔ Community Support</li>
-
-                <li>✔ Basic Analytics</li>
-
-                <li>✔ Free SSL Certificate</li>
-
-            </ul>
-
-            <button>Select Plan</button>
-
-        </div>
-
-        <!-- Professional -->
-
-        <div class="pricing-card featured">
-
-            <div class="badge">
-
-                ⭐ Most Popular
-
-            </div>
-
-            <h2>Professional</h2>
-
-            <p class="price">$29<span>/month</span></p>
-
-            <ul>
-
-                <li>✔ 10 Websites</li>
-
-                <li>✔ 100 GB Storage</li>
-
-                <li>✔ Priority Support</li>
-
-                <li>✔ Advanced Analytics</li>
-
-                <li>✔ Daily Backups</li>
-
-            </ul>
-
-            <button>Get Started</button>
-
-        </div>
-
-        <!-- Enterprise -->
-
-        <div class="pricing-card">
-
-            <h2>Enterprise</h2>
-
-            <p class="price">$99<span>/month</span></p>
-
-            <ul>
-
-                <li>✔ Unlimited Websites</li>
-
-                <li>✔ Unlimited Storage</li>
-
-                <li>✔ 24/7 Premium Support</li>
-
-                <li>✔ Custom Integrations</li>
-
-                <li>✔ Dedicated Account Manager</li>
-
-            </ul>
-
-            <button>Contact Sales</button>
-
-        </div>
-
-    </section>
-
-    <!-- ================= FEATURES ================= -->
-
-    <section class="features">
-
-        <div class="feature-box">
-
-            <h3>⚡ Fast Performance</h3>
-
-            <p>
-                Optimized infrastructure for lightning-fast loading speeds.
-            </p>
-
-        </div>
-
-        <div class="feature-box">
-
-            <h3>🔒 Secure Platform</h3>
-
-            <p>
-                Enterprise-level security keeps your data protected.
-            </p>
-
-        </div>
-
-        <div class="feature-box">
-
-            <h3>📈 Scalable</h3>
-
-            <p>
-                Upgrade your plan anytime as your business grows.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- ================= CTA ================= -->
-
-    <section class="cta">
-
-        <h2>Trusted by 500+ Happy Customers</h2>
+        </h1>
 
         <p>
 
-            Start your journey today and grow with confidence.
+            Explore how CSS Grid builds powerful
+            two-dimensional layouts using rows and
+            columns. Learn modern Grid concepts
+            through real-world examples.
 
         </p>
+
+    </div>
+
+</header>
+
+<main>
+
+<!-- ==========================================
+            SECTION INTRO
+========================================== -->
+
+<section class="section-heading">
+
+    <span class="section-tag">
+
+        CSS GRID
+
+    </span>
+
+    <h2>
+
+        Structured Pricing Layout
+
+    </h2>
+
+    <p>
+
+        Unlike Flexbox, CSS Grid controls
+        both rows and columns simultaneously.
+        Every card below sits inside an equal,
+        perfectly aligned grid.
+
+    </p>
+
+</section>
+
+<!-- ==========================================
+            PRICING GRID
+========================================== -->
+
+<section class="pricing-grid">
+
+    <article class="pricing-card">
+
+        <h3>
+
+            Basic
+
+        </h3>
+
+        <div class="price">
+
+            $19
+
+            <span>/month</span>
+
+        </div>
+
+        <ul>
+
+            <li>📁 10 Projects</li>
+
+            <li>💬 Basic Support</li>
+
+            <li>💾 20 GB Storage</li>
+
+            <li>📱 Responsive Design</li>
+
+        </ul>
 
         <button>
 
-            Start Your Free Trial
+            Choose Plan →
 
         </button>
 
-    </section>
+    </article>
 
-    <!-- ================= FOOTER ================= -->
+    <article class="pricing-card featured">
 
-    <footer>
+        <span class="badge">
 
-        <p> 
+            MOST POPULAR
 
-            © 2026 Responsive Layout Playground |
-            Built using HTML5 & CSS Grid
+        </span>
+
+        <h3>
+
+            Professional
+
+        </h3>
+
+        <div class="price">
+
+            $49
+
+            <span>/month</span>
+
+        </div>
+
+        <ul>
+
+            <li>📁 Unlimited Projects</li>
+
+            <li>⚡ Priority Support</li>
+
+            <li>☁ Cloud Storage</li>
+
+            <li>🔒 Advanced Security</li>
+
+        </ul>
+
+        <button>
+
+            Get Started →
+
+        </button>
+
+    </article>
+
+    <article class="pricing-card">
+
+        <h3>
+
+            Enterprise
+
+        </h3>
+
+        <div class="price">
+
+            $99
+
+            <span>/month</span>
+
+        </div>
+
+        <ul>
+
+            <li>👥 Unlimited Users</li>
+
+            <li>🛡 Dedicated Support</li>
+
+            <li>☁ Unlimited Storage</li>
+
+            <li>🚀 Custom Solutions</li>
+
+        </ul>
+
+        <button>
+
+            Contact Sales →
+
+        </button>
+
+    </article>
+
+</section>
+
+<!-- ==========================================
+            GRID VISUALIZATION
+========================================== -->
+
+<section class="grid-demo">
+
+    <div class="section-heading">
+
+        <span class="section-tag">
+
+            LIVE GRID
+
+        </span>
+
+        <h2>
+
+            CSS Grid in Action
+
+        </h2>
+
+        <p>
+
+            This example demonstrates how Grid
+            creates rows and columns while allowing
+            selected items to span multiple cells.
 
         </p>
 
-    </footer>
+    </div>
+
+    <div class="demo-grid">
+
+        <div class="demo-box">
+            A
+        </div>
+
+        <div class="demo-box">
+            B
+        </div>
+
+        <div class="demo-box">
+            C
+        </div>
+
+        <div class="demo-box">
+            D
+        </div>
+
+        <div class="demo-box">
+            E
+        </div>
+
+        <div class="demo-box">
+            F
+        </div>
+
+        <div class="demo-box span-two">
+            G spans 2 Columns
+        </div>
+
+        <div class="demo-box">
+            H
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+        GRID TEMPLATE AREAS DEMO
+========================================== -->
+
+<section class="areas-demo">
+
+    <div class="section-heading">
+
+        <span class="section-tag">
+
+            GRID AREAS
+
+        </span>
+
+        <h2>
+
+            Named Grid Areas
+
+        </h2>
+
+        <p>
+
+            CSS Grid allows developers to build
+            complete page layouts using named
+            template areas.
+
+        </p>
+
+    </div>
+
+    <div class="areas-layout">
+
+        <div class="area header-area">
+
+            Header
+
+        </div>
+
+        <div class="area sidebar-area">
+
+            Sidebar
+
+        </div>
+
+        <div class="area content-area">
+
+            Main Content
+
+        </div>
+
+        <div class="area footer-area">
+
+            Footer
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+        KEY GRID PROPERTIES
+========================================== -->
+
+<section class="properties">
+
+    <div class="section-heading">
+
+        <span class="section-tag">
+
+            CSS GRID PROPERTIES
+
+        </span>
+
+        <h2>
+
+            Essential CSS Grid Properties
+
+        </h2>
+
+        <p>
+
+            These properties form the foundation
+            of every modern Grid layout.
+
+        </p>
+
+    </div>
+
+    <div class="properties-grid">
+
+        <article class="property-card">
+
+            <h3>
+
+                display: grid
+
+            </h3>
+
+            <p>
+
+                Turns an element into
+                a Grid container.
+
+            </p>
+
+        </article>
+
+        <article class="property-card">
+
+            <h3>
+
+                grid-template-columns
+
+            </h3>
+
+            <p>
+
+                Defines the number and
+                width of columns.
+
+            </p>
+
+        </article>
+
+        <article class="property-card">
+
+            <h3>
+
+                grid-template-rows
+
+            </h3>
+
+            <p>
+
+                Controls the height
+                of grid rows.
+
+            </p>
+
+        </article>
+
+        <article class="property-card">
+
+            <h3>
+
+                gap
+
+            </h3>
+
+            <p>
+
+                Adds spacing between
+                rows and columns.
+
+            </p>
+
+        </article>
+
+        <article class="property-card">
+
+            <h3>
+
+                grid-column
+
+            </h3>
+
+            <p>
+
+                Allows an item to span
+                across multiple columns.
+
+            </p>
+
+        </article>
+
+        <article class="property-card">
+
+            <h3>
+
+                grid-area
+
+            </h3>
+
+            <p>
+
+                Places items into named
+                layout areas.
+
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+        GRID VS FLEXBOX
+========================================== -->
+
+<section class="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-tag">
+
+            COMPARISON
+
+        </span>
+
+        <h2>
+
+            CSS Grid vs Flexbox
+
+        </h2>
+
+        <p>
+
+            Use the right layout tool
+            for the right problem.
+
+        </p>
+
+    </div>
+
+    <div class="comparison-grid">
+
+        <article class="comparison-card">
+
+            <h3>
+
+                CSS Grid
+
+            </h3>
+
+            <ul>
+
+                <li>✅ Two-dimensional layouts</li>
+
+                <li>✅ Dashboards</li>
+
+                <li>✅ Landing pages</li>
+
+                <li>✅ Magazine layouts</li>
+
+                <li>✅ Complex responsive designs</li>
+
+            </ul>
+
+        </article>
+
+        <article class="comparison-card">
+
+            <h3>
+
+                CSS Flexbox
+
+            </h3>
+
+            <ul>
+
+                <li>✅ Navigation bars</li>
+
+                <li>✅ Cards</li>
+
+                <li>✅ Toolbars</li>
+
+                <li>✅ Menus</li>
+
+                <li>✅ One-dimensional layouts</li>
+
+            </ul>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+                CALL TO ACTION
+========================================== -->
+
+<section class="cta">
+
+    <h2>
+
+        Master Modern CSS Layouts
+
+    </h2>
+
+    <p>
+
+        CSS Grid and Flexbox complement
+        each other. Learning both enables
+        you to build responsive interfaces
+        with confidence.
+
+    </p>
+
+    <a
+        href="../index.html"
+        class="cta-btn">
+
+        ← Back to Project Home
+
+    </a>
+
+</section>
+
+</main>
+
+<!-- ==========================================
+                FOOTER
+========================================== -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>
+
+            CSS Grid Playground
+
+        </h3>
+
+        <p>
+
+            A practical project for learning
+            modern CSS Grid through responsive,
+            real-world layouts.
+
+        </p>
+
+        <div class="footer-tech">
+
+            <span>HTML5</span>
+
+            <span>CSS3</span>
+
+            <span>CSS Grid</span>
+
+            <span>Responsive Design</span>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 • Made by 
+            <strong>Eisha Naeem</strong>
+
+        </p>
+
+    </div>
+
+</footer>
 
 </body>
 
