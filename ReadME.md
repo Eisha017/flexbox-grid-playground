@@ -72,7 +72,8 @@ Through this project, I practiced:
 
 **Eisha Naeem**
 
-Computer Engineering | Frontend Developer
+Computer Engineer 
+
 
 
 ---
