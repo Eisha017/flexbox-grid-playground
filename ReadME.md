@@ -72,7 +72,7 @@ Through this project, I practiced:
 
 **Eisha Naeem**
 
-Computer Engineering Student | Frontend Developer
+Computer Engineering | Frontend Developer
 
 
 ---
