@@ -1881,3 +1881,389 @@ button:active,
 
 
 }
+/* ==========================================================
+   PREMIUM MOBILE EXPERIENCE
+   480px AND BELOW
+========================================================== */
+
+
+@media(max-width:480px){
+
+
+    body{
+
+        overflow-x:hidden;
+
+    }
+
+
+    main{
+
+        width:92%;
+
+    }
+
+
+
+    /* ==========================
+       HERO
+    ========================== */
+
+
+    header{
+
+        padding:55px 18px 65px;
+
+    }
+
+
+    .hero-content{
+
+        width:100%;
+
+    }
+
+
+    .hero-content h1{
+
+        font-size:2rem;
+
+        line-height:1.15;
+
+        letter-spacing:-.5px;
+
+    }
+
+
+    .hero-content p{
+
+        font-size:.9rem;
+
+        line-height:1.6;
+
+    }
+
+
+
+    /* ==========================
+       SECTION HEADINGS
+    ========================== */
+
+
+    .section-heading{
+
+        margin:50px auto 35px;
+
+    }
+
+
+    .section-tag{
+
+        font-size:.7rem;
+
+        padding:7px 14px;
+
+    }
+
+
+    .section-heading h2{
+
+        font-size:1.6rem;
+
+        line-height:1.25;
+
+    }
+
+
+    .section-heading p{
+
+        font-size:.9rem;
+
+    }
+
+
+
+    /* ==========================
+       PRICING CARDS
+    ========================== */
+
+
+    .pricing-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+
+    .pricing-card{
+
+        padding:24px 20px;
+
+        border-radius:20px;
+
+    }
+
+
+    .pricing-card h3{
+
+        font-size:1.35rem;
+
+    }
+
+
+    .price{
+
+        font-size:2.4rem;
+
+    }
+
+
+    .pricing-card li{
+
+        padding:11px;
+
+        font-size:.85rem;
+
+    }
+
+
+    button{
+
+        padding:13px;
+
+        font-size:.9rem;
+
+        border-radius:12px;
+
+    }
+
+
+
+    /* ==========================
+       GRID DEMO
+    ========================== */
+
+
+    .demo-grid{
+
+        grid-template-columns:1fr;
+
+        gap:14px;
+
+    }
+
+
+    .demo-box{
+
+        padding:28px 20px;
+
+        border-radius:18px;
+
+        font-size:.95rem;
+
+    }
+
+
+    .span-two{
+
+        grid-column:auto;
+
+    }
+
+
+
+    /* ==========================
+       GRID AREAS
+    ========================== */
+
+
+    .areas-layout{
+
+
+        grid-template-columns:1fr;
+
+
+        grid-template-areas:
+
+        "header"
+
+        "sidebar"
+
+        "content"
+
+        "footer";
+
+
+        gap:14px;
+
+    }
+
+
+    .area{
+
+        padding:25px 15px;
+
+        border-radius:18px;
+
+    }
+
+
+
+    /* ==========================
+       PROPERTIES
+    ========================== */
+
+
+    .properties-grid{
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+
+    .property-card{
+
+        padding:22px;
+
+        border-radius:18px;
+
+    }
+
+
+    .property-card h3{
+
+        font-size:1.1rem;
+
+    }
+
+
+    .property-card p{
+
+        font-size:.85rem;
+
+    }
+
+
+
+    /* ==========================
+       COMPARISON
+    ========================== */
+
+
+    .comparison-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+
+    .comparison-card{
+
+        padding:22px;
+
+        border-radius:20px;
+
+    }
+
+
+    .comparison-card h3{
+
+        font-size:1.3rem;
+
+    }
+
+
+    .comparison-card li{
+
+        padding:11px;
+
+        font-size:.85rem;
+
+    }
+
+
+
+    /* ==========================
+       CTA
+    ========================== */
+
+
+    .cta{
+
+        padding:55px 20px;
+
+        border-radius:22px;
+
+    }
+
+
+    .cta h2{
+
+        font-size:1.7rem;
+
+    }
+
+
+    .cta p{
+
+        font-size:.9rem;
+
+    }
+
+
+    .cta-btn{
+
+        width:100%;
+
+        padding:14px;
+
+    }
+
+
+
+    /* ==========================
+       FOOTER
+    ========================== */
+
+
+    .footer-content{
+
+        padding:50px 15px;
+
+    }
+
+
+    .footer-content h3{
+
+        font-size:1.5rem;
+
+    }
+
+
+    .footer-tech{
+
+        display:grid;
+
+        grid-template-columns:1fr 1fr;
+
+        gap:10px;
+
+    }
+
+
+    .footer-tech span{
+
+        font-size:.8rem;
+
+        padding:8px;
+
+    }
+
+
+}
