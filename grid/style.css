@@ -1,8 +1,10 @@
 /* ==========================================================
    CSS GRID PLAYGROUND
    Author: Eisha Naeem
-   Part 1/5
+   Premium Responsive Version
+   PART 1/3
 ========================================================== */
+
 
 /* ==========================================================
    GOOGLE FONT
@@ -10,8 +12,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
+
+
 /* ==========================================================
-   CSS VARIABLES
+   VARIABLES
 ========================================================== */
 
 :root{
@@ -29,10 +33,10 @@
     --border:#e2e8f0;
 
     --shadow:
-        0 10px 30px rgba(15,23,42,.08);
+    0 10px 30px rgba(15,23,42,.08);
 
     --shadow-lg:
-        0 20px 45px rgba(15,23,42,.15);
+    0 20px 45px rgba(15,23,42,.15);
 
     --radius:22px;
 
@@ -40,9 +44,12 @@
 
 }
 
+
+
 /* ==========================================================
    RESET
 ========================================================== */
+
 
 *{
 
@@ -52,11 +59,15 @@
 
 }
 
+
+
 html{
 
     scroll-behavior:smooth;
 
 }
+
+
 
 body{
 
@@ -68,14 +79,20 @@ body{
 
     line-height:1.7;
 
+    overflow-x:hidden;
+
 }
+
+
 
 img{
 
-    display:block;
     max-width:100%;
+    display:block;
 
 }
+
+
 
 a{
 
@@ -83,11 +100,17 @@ a{
 
 }
 
+
+
 button{
 
-    font:inherit;
+    font-family:inherit;
+
+    cursor:pointer;
 
 }
+
+
 
 ul{
 
@@ -95,16 +118,30 @@ ul{
 
 }
 
+
+
+
 /* ==========================================================
-   MAIN
+   MAIN CONTAINER
 ========================================================== */
+
 
 main{
 
     width:min(1200px,92%);
+
     margin:auto;
 
 }
+
+
+
+
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
 
 .section-heading{
 
@@ -115,6 +152,8 @@ main{
     text-align:center;
 
 }
+
+
 
 .section-tag{
 
@@ -136,13 +175,19 @@ main{
 
 }
 
+
+
 .section-heading h2{
 
     font-size:clamp(2rem,4vw,3rem);
 
+    line-height:1.2;
+
     margin-bottom:18px;
 
 }
+
+
 
 .section-heading p{
 
@@ -152,32 +197,47 @@ main{
 
 }
 
+
+
+
+
 /* ==========================================================
-   HERO
+   HERO SECTION
 ========================================================== */
+
 
 header{
 
     background:
+
     linear-gradient(
         135deg,
         var(--primary),
         var(--secondary)
     );
 
-    color:#fff;
+
+    color:white;
 
     padding:110px 20px;
 
 }
 
+
+
 .hero-content{
 
     width:min(900px,92%);
+
     margin:auto;
+
     text-align:center;
 
+    animation:fadeIn .9s ease;
+
 }
+
+
 
 .hero-badge{
 
@@ -189,9 +249,15 @@ header{
 
     border-radius:999px;
 
-    background:rgba(255,255,255,.15);
+    background:
 
-    border:1px solid rgba(255,255,255,.25);
+    rgba(255,255,255,.15);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.25);
+
 
     backdrop-filter:blur(12px);
 
@@ -199,15 +265,19 @@ header{
 
 }
 
+
+
 .hero-content h1{
 
     font-size:clamp(2.8rem,6vw,4.5rem);
 
-    margin-bottom:22px;
-
     line-height:1.1;
 
+    margin-bottom:22px;
+
 }
+
+
 
 .hero-content p{
 
@@ -221,50 +291,64 @@ header{
 
 }
 
+
+
+
 /* ==========================================================
    PRICING GRID
 ========================================================== */
+
 
 .pricing-grid{
 
     display:grid;
 
     grid-template-columns:
-        repeat(3,1fr);
+
+    repeat(3,1fr);
+
 
     gap:28px;
 
     margin-bottom:100px;
 
-    align-items:stretch;
-
 }
+
+
+
+
 
 .pricing-card{
 
     position:relative;
 
-    display:grid;
+    display:flex;
 
-    grid-template-rows:
-        auto
-        auto
-        1fr
-        auto;
+    flex-direction:column;
+
 
     background:var(--surface);
 
-    border:1px solid var(--border);
+
+    border:
+
+    1px solid var(--border);
+
 
     border-radius:var(--radius);
 
+
     padding:30px;
 
+
     box-shadow:var(--shadow);
+
 
     transition:var(--transition);
 
 }
+
+
 
 .pricing-card:hover{
 
@@ -274,19 +358,33 @@ header{
 
 }
 
+
+
+
 .featured{
 
-    border:2px solid var(--primary);
+    border:
+
+    2px solid var(--primary);
+
 
     transform:scale(1.04);
 
 }
 
+
+
 .featured:hover{
 
-    transform:scale(1.04) translateY(-10px);
+    transform:
+
+    scale(1.04)
+    translateY(-10px);
 
 }
+
+
+
 
 .badge{
 
@@ -298,13 +396,17 @@ header{
 
     transform:translateX(-50%);
 
+
     background:var(--primary);
 
-    color:#fff;
+    color:white;
+
 
     padding:8px 18px;
 
+
     border-radius:999px;
+
 
     font-size:.75rem;
 
@@ -312,66 +414,102 @@ header{
 
 }
 
+
+
+
+
 .pricing-card h3{
 
     text-align:center;
 
-    margin:18px 0;
-
     font-size:1.6rem;
 
+    margin:18px 0;
+
 }
+
+
+
+
 
 .price{
 
     text-align:center;
 
+
     font-size:3rem;
+
 
     font-weight:800;
 
+
     color:var(--primary);
 
-    margin-bottom:24px;
+
+    margin-bottom:25px;
 
 }
+
+
+
 
 .price span{
 
     display:block;
 
-    font-size:1rem;
 
     color:var(--muted);
 
+
+    font-size:1rem;
+
 }
-/* ==========================================================
-   PRICING CARD CONTENT
-========================================================== */
+
+
+
 
 .pricing-card ul{
 
+
     display:grid;
+
 
     gap:14px;
 
-    margin-bottom:28px;
+
+    flex:1;
+
+
+    margin-bottom:25px;
+
 
 }
+
+
+
 
 .pricing-card li{
 
+
     background:#f8fafc;
 
-    border:1px solid #edf2f7;
+
+    border:
+
+    1px solid var(--border);
+
+
+    padding:14px;
+
 
     border-radius:14px;
 
-    padding:14px 16px;
 
-    transition:var(--transition);
+    transition:.3s ease;
 
 }
+
+
 
 .pricing-card li:hover{
 
@@ -381,46 +519,98 @@ header{
 
 }
 
+
+
+
 button{
+
 
     width:100%;
 
     padding:15px;
 
+
     border:none;
+
 
     border-radius:14px;
 
-    cursor:pointer;
 
-    color:#fff;
+    color:white;
 
-    font-size:1rem;
 
     font-weight:600;
 
-    background:linear-gradient(
+
+    background:
+
+
+    linear-gradient(
         135deg,
         var(--primary),
         var(--secondary)
     );
 
-    transition:var(--transition);
+
+    transition:.3s ease;
 
 }
+
+
+
 
 button:hover{
 
     transform:translateY(-4px);
 
     box-shadow:
-        0 15px 35px rgba(37,99,235,.25);
+
+    0 15px 35px rgba(37,99,235,.25);
+
+}
+
+
+
+
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+
+@keyframes fadeIn{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
 
 }
 
 /* ==========================================================
+   CSS GRID PLAYGROUND
+   PART 2/3
+   GRID SECTIONS + COMPARISON + CTA
+========================================================== */
+
+
+
+/* ==========================================================
    GRID DEMO
 ========================================================== */
+
 
 .grid-demo{
 
@@ -428,369 +618,706 @@ button:hover{
 
 }
 
+
+
 .demo-grid{
+
 
     display:grid;
 
+
     grid-template-columns:
-        repeat(3,1fr);
+
+    repeat(3,1fr);
+
 
     gap:18px;
 
+
 }
+
+
 
 .demo-box{
 
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary),
-            var(--secondary)
-        );
-
-    color:#fff;
 
     padding:35px;
 
-    text-align:center;
 
-    font-weight:700;
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+
+    color:white;
+
 
     border-radius:18px;
 
+
+    text-align:center;
+
+
+    font-weight:700;
+
+
     box-shadow:var(--shadow);
+
 
     transition:var(--transition);
 
+
 }
+
+
 
 .demo-box:hover{
 
-    transform:translateY(-6px);
+
+    transform:translateY(-8px);
+
+
+    box-shadow:var(--shadow-lg);
+
 
 }
+
+
 
 .span-two{
 
+
     grid-column:span 2;
 
+
 }
+
+
+
+
 
 /* ==========================================================
    GRID TEMPLATE AREAS
 ========================================================== */
 
+
 .areas-demo{
+
 
     margin-bottom:100px;
 
+
 }
+
+
+
 
 .areas-layout{
 
+
     display:grid;
 
+
     grid-template-columns:
-        220px
-        1fr;
+
+    220px 1fr;
+
 
     grid-template-areas:
 
-        "header header"
 
-        "sidebar content"
+    "header header"
 
-        "footer footer";
+
+    "sidebar content"
+
+
+    "footer footer";
+
 
     gap:18px;
 
+
 }
+
+
+
 
 .area{
 
+
     padding:40px;
+
 
     border-radius:20px;
 
-    color:#fff;
 
-    font-weight:600;
+    color:white;
+
 
     text-align:center;
 
+
+    font-weight:600;
+
+
     box-shadow:var(--shadow);
 
+
 }
+
+
 
 .header-area{
 
+
     grid-area:header;
+
 
     background:#2563eb;
 
+
 }
+
+
 
 .sidebar-area{
 
+
     grid-area:sidebar;
+
 
     background:#4f46e5;
 
+
     min-height:220px;
 
+
 }
+
+
 
 .content-area{
 
+
     grid-area:content;
+
 
     background:#7c3aed;
 
+
 }
+
+
 
 .footer-area{
 
+
     grid-area:footer;
+
 
     background:#1e40af;
 
+
 }
+
+
+
+
+
+
 /* ==========================================================
    KEY GRID PROPERTIES
 ========================================================== */
 
+
 .properties{
+
 
     margin-bottom:100px;
 
+
 }
+
+
+
 
 .properties-grid{
 
+
     display:grid;
 
+
     grid-template-columns:
-        repeat(3,1fr);
+
+    repeat(3,1fr);
+
 
     gap:24px;
 
+
 }
+
+
+
 
 .property-card{
 
+
     background:var(--surface);
 
-    border:1px solid var(--border);
+
+    border:
+
+    1px solid var(--border);
+
 
     border-radius:var(--radius);
 
+
     padding:30px;
+
 
     box-shadow:var(--shadow);
 
+
     transition:var(--transition);
 
+
 }
+
+
+
 
 .property-card:hover{
 
+
     transform:translateY(-8px);
+
 
     box-shadow:var(--shadow-lg);
 
+
 }
+
+
+
+
 
 .property-card h3{
 
+
     color:var(--primary);
 
-    margin-bottom:15px;
 
     font-size:1.3rem;
 
+
+    margin-bottom:15px;
+
+
 }
+
+
+
 
 .property-card p{
 
+
     color:var(--muted);
 
+
 }
+
+
+
+
+
+
+
 
 /* ==========================================================
    GRID VS FLEXBOX
 ========================================================== */
 
+
 .comparison{
+
 
     margin-bottom:100px;
 
+
 }
+
+
+
 
 .comparison-grid{
 
+
     display:grid;
 
+
     grid-template-columns:
-        repeat(2,1fr);
+
+    repeat(2,1fr);
+
 
     gap:30px;
 
+
 }
+
+
+
 
 .comparison-card{
 
+
     background:var(--surface);
 
-    border:1px solid var(--border);
+
+    border:
+
+    1px solid var(--border);
+
 
     border-radius:var(--radius);
 
+
     padding:35px;
+
 
     box-shadow:var(--shadow);
 
+
     transition:var(--transition);
 
+
 }
+
+
+
 
 .comparison-card:hover{
 
+
     transform:translateY(-8px);
+
 
     box-shadow:var(--shadow-lg);
 
+
 }
+
+
+
 
 .comparison-card:first-child{
 
-    border-top:6px solid var(--primary);
+
+    border-top:
+
+    6px solid var(--primary);
+
 
 }
+
+
 
 .comparison-card:last-child{
 
-    border-top:6px solid var(--accent);
+
+    border-top:
+
+    6px solid var(--accent);
+
 
 }
+
+
+
+
 
 .comparison-card h3{
 
+
     text-align:center;
+
 
     font-size:1.6rem;
 
+
     margin-bottom:25px;
 
+
 }
+
+
+
+
 
 .comparison-card ul{
 
+
     display:grid;
+
 
     gap:14px;
 
+
 }
+
+
+
+
 
 .comparison-card li{
 
+
     background:#f8fafc;
 
-    border:1px solid var(--border);
+
+    border:
+
+    1px solid var(--border);
+
 
     padding:14px 18px;
 
+
     border-radius:14px;
 
+
 }
+
+
+
+
 
 .comparison-card li:hover{
 
+
     background:#eff6ff;
+
 
 }
 
+
+
+
+
+
+
 /* ==========================================================
-   CALL TO ACTION
+   CTA SECTION
 ========================================================== */
+
+
 
 .cta{
 
+
     text-align:center;
+
 
     padding:90px 40px;
 
+
     margin-bottom:90px;
+
 
     border-radius:30px;
 
+
     background:
 
+
     linear-gradient(
+
         135deg,
+
         #dbeafe,
+
         #ede9fe
+
     );
 
+
 }
+
+
+
 
 .cta h2{
 
-    font-size:clamp(2rem,4vw,3rem);
+
+    font-size:
+
+    clamp(2rem,4vw,3rem);
+
 
     margin-bottom:18px;
 
+
 }
+
+
+
+
 
 .cta p{
 
+
     max-width:700px;
 
-    margin:0 auto 35px;
+
+    margin:
+
+    0 auto 35px;
+
 
     color:var(--muted);
 
+
 }
+
+
+
+
 
 .cta-btn{
 
+
     display:inline-flex;
+
 
     align-items:center;
 
+
     justify-content:center;
+
 
     padding:16px 34px;
 
+
     border-radius:999px;
 
-    background:
 
-    linear-gradient(
-        135deg,
-        var(--primary),
-        var(--secondary)
-    );
+    color:white;
 
-    color:#fff;
 
     font-weight:600;
 
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+
     transition:var(--transition);
 
+
 }
+
+
+
 
 .cta-btn:hover{
 
+
     transform:translateY(-5px);
 
+
     box-shadow:
-        0 15px 35px rgba(37,99,235,.3);
+
+    0 15px 35px rgba(37,99,235,.3);
+
 
 }
+
+
+
+
+/* ==========================================================
+   GLOBAL ANIMATION
+========================================================== */
+
+
+.demo-box,
+.area,
+.property-card,
+.comparison-card{
+
+
+    animation:fadeUp .7s ease both;
+
+
+}
+
+
+
+
+
+@keyframes fadeUp{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:translateY(30px);
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:translateY(0);
+
+
+    }
+
+
+}
+/* ==========================================================
+   CSS GRID PLAYGROUND
+   PART 3/3
+   FOOTER + ICONS + RESPONSIVE SYSTEM
+========================================================== */
+
+
 
 /* ==========================================================
    FOOTER
 ========================================================== */
+
 
 footer{
 
@@ -798,39 +1325,74 @@ footer{
 
     color:white;
 
-    margin-top:40px;
+    margin-top:60px;
 
 }
+
+
+
 
 .footer-content{
 
+
     width:min(1200px,92%);
+
 
     margin:auto;
 
-    padding:70px 20px;
+
+    padding:60px 20px;
+
 
     text-align:center;
 
+
 }
+
+
+
 
 .footer-content h3{
 
-    font-size:2rem;
+
+    font-size:1.8rem;
+
 
     margin-bottom:15px;
 
+
 }
+
+
+
+
 
 .footer-content p{
 
-    max-width:700px;
 
-    margin:0 auto 25px;
+    max-width:650px;
+
+
+    margin:auto;
+
 
     color:#cbd5e1;
 
+
+    font-size:.95rem;
+
+
 }
+
+
+
+
+
+
+/* ===========================
+   FOOTER TECH ICONS
+=========================== */
+
 
 .footer-tech{
 
@@ -846,135 +1408,698 @@ footer{
 
 }
 
-.footer-tech span{
 
-    padding:10px 18px;
 
-    border-radius:999px;
+.tech-icon{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
 
     background:rgba(255,255,255,.08);
 
     border:1px solid rgba(255,255,255,.15);
 
-    transition:var(--transition);
+    transition:.35s ease;
 
 }
 
-.footer-tech span:hover{
 
-    background:var(--primary);
+
+.tech-icon i{
+
+    font-size:1.3rem;
 
 }
+
+
+
+.tech-icon:nth-child(1) i{
+
+    color:#e34f26;
+
+}
+
+
+.tech-icon:nth-child(2) i{
+
+    color:#1572b6;
+
+}
+
+
+.tech-icon:nth-child(3) i{
+
+    color:#8b5cf6;
+
+}
+
+
+.tech-icon:nth-child(4) i{
+
+    color:#22c55e;
+
+}
+
+
+.tech-icon:nth-child(5) i{
+
+    color:#f59e0b;
+
+}
+
+
+
+.tech-icon:hover{
+
+    transform:translateY(-6px) scale(1.1);
+
+    background:white;
+
+}
+
+
+
+
+
+
+
+.copyright{
+
+
+    margin-top:25px;
+
+
+    font-size:.85rem;
+
+
+    color:#94a3b8;
+
+
+}
+
+
+
+
+
 
 /* ==========================================================
-   ANIMATIONS
+   TABLET RESPONSIVE
+   900px
 ========================================================== */
 
-.pricing-card,
-.demo-box,
-.area,
-.property-card,
+
+@media(max-width:900px){
+
+
+
+    main{
+
+        width:92%;
+
+    }
+
+
+
+    .pricing-grid{
+
+
+        gap:18px;
+
+
+    }
+
+
+
+    .pricing-card{
+
+
+        padding:22px;
+
+
+    }
+
+
+
+    .properties-grid{
+
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+
+    }
+
+
+
+    .hero-content h1{
+
+
+        font-size:3rem;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================================================
+   MOBILE RESPONSIVE
+   600px
+========================================================== */
+
+
+@media(max-width:600px){
+
+
+
+body{
+
+
+    overflow-x:hidden;
+
+
+}
+
+
+
+main{
+
+
+    width:92%;
+
+
+}
+
+
+
+
+/* HERO */
+
+
+header{
+
+
+    padding:60px 18px;
+
+
+}
+
+
+
+.hero-content h1{
+
+
+    font-size:2rem;
+
+
+}
+
+
+
+.hero-content p{
+
+
+    font-size:.9rem;
+
+
+}
+
+
+
+
+
+/* PRICING */
+
+
+.pricing-grid{
+
+
+    display:flex;
+
+
+    overflow-x:auto;
+
+
+    gap:15px;
+
+
+    padding-bottom:20px;
+
+
+    scroll-snap-type:x mandatory;
+
+
+}
+
+
+
+
+.pricing-card{
+
+
+    flex:0 0 85%;
+
+
+    scroll-snap-align:center;
+
+
+}
+
+
+
+
+.featured{
+
+
+    transform:none;
+
+
+}
+
+
+
+.featured:hover{
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+/* GRID DEMO */
+
+
+.demo-grid{
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+    gap:12px;
+
+
+}
+
+
+
+
+.demo-box{
+
+
+    padding:22px 10px;
+
+
+    font-size:.85rem;
+
+
+}
+
+
+
+
+
+.span-two{
+
+
+    grid-column:span 2;
+
+
+}
+
+
+
+
+
+
+/* GRID AREAS */
+
+
+.areas-layout{
+
+
+    grid-template-columns:
+
+    1fr;
+
+
+    grid-template-areas:
+
+
+    "header"
+
+
+    "sidebar"
+
+
+    "content"
+
+
+    "footer";
+
+
+}
+
+
+
+.area{
+
+
+    padding:25px;
+
+
+}
+
+
+
+
+
+
+/* PROPERTIES */
+
+
+.properties-grid{
+
+
+    grid-template-columns:
+
+    1fr;
+
+
+}
+
+
+
+
+
+
+/* COMPARISON */
+
+
+.comparison-grid{
+
+
+    grid-template-columns:
+
+    1fr;
+
+
+}
+
+
+
+
 .comparison-card{
 
-    animation:fadeUp .8s ease both;
+
+    padding:22px;
+
 
 }
 
 
-.pricing-card:nth-child(2){
 
-    animation-delay:.15s;
+
+
+
+/* CTA */
+
+
+.cta{
+
+
+    padding:50px 20px;
+
 
 }
 
 
-.pricing-card:nth-child(3){
 
-    animation-delay:.3s;
+.cta-btn{
+
+
+    width:100%;
+
 
 }
 
 
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(35px);
-
-    }
 
 
-    to{
 
-        opacity:1;
+/* FOOTER */
 
-        transform:translateY(0);
 
-    }
+.footer-content{
+
+
+    padding:45px 15px;
+
 
 }
+
+
+
+
+.footer-content h3{
+
+
+    font-size:1.5rem;
+
+
+}
+
+
+
+
+
+.footer-tech{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(5,1fr);
+
+
+    gap:10px;
+
+
+}
+
+
+
+
+
+.tech-icon{
+
+
+    width:38px;
+
+
+    height:38px;
+
+
+}
+
+
+
+
+.tech-icon i{
+
+
+    font-size:1.1rem;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
 
 
 /* ==========================================================
-   EXTRA UI POLISH
+   SMALL PHONES
+   380px
 ========================================================== */
 
 
-::selection{
+@media(max-width:380px){
 
-    background:var(--primary);
 
-    color:white;
+
+.section-heading{
+
+
+    margin:50px auto 35px;
+
 
 }
+
+
+
+.section-heading h2{
+
+
+    font-size:1.5rem;
+
+
+}
+
+
+
+
+.hero-content h1{
+
+
+    font-size:1.7rem;
+
+
+}
+
+
+
+
+
+.pricing-card{
+
+
+    flex-basis:90%;
+
+
+}
+
+
+
+.demo-grid{
+
+
+    grid-template-columns:
+
+    1fr;
+
+
+}
+
+
+
+.span-two{
+
+
+    grid-column:auto;
+
+
+}
+
+
+
+
+
+.footer-tech{
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+}
+
+
+
+
+.tech-icon{
+
+
+    width:36px;
+
+
+    height:36px;
+
+
+}
+
+
+
+.tech-icon i{
+
+
+    font-size:.95rem;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   ANIMATION POLISH
+========================================================== */
 
 
 button:active,
 .cta-btn:active{
 
-    transform:scale(.97);
+
+    transform:scale(.96);
+
 
 }
 
 
-.pricing-card,
-.demo-box,
-.area,
-.property-card,
-.comparison-card{
 
-    will-change:transform;
+
+::selection{
+
+
+    background:var(--primary);
+
+
+    color:white;
+
 
 }
 
 
-/* HERO ANIMATION */
 
-.hero-content{
-
-    animation:fadeIn .9s ease;
-
-}
-
-
-@keyframes fadeIn{
-
-    from{
-
-        opacity:0;
-
-    }
-
-
-    to{
-
-        opacity:1;
-
-    }
-
-}
 
 
 /* ==========================================================
@@ -984,1286 +2109,46 @@ button:active,
 
 ::-webkit-scrollbar{
 
+
     width:10px;
 
+
 }
+
+
 
 
 ::-webkit-scrollbar-track{
 
+
     background:#e2e8f0;
 
+
 }
+
+
+
 
 
 ::-webkit-scrollbar-thumb{
 
+
     background:var(--primary);
+
 
     border-radius:999px;
 
+
 }
+
+
+
 
 
 ::-webkit-scrollbar-thumb:hover{
 
+
     background:var(--secondary);
-
-}
-
-/* ==========================================================
-   CSS GRID PLAYGROUND
-   RESPONSIVE SYSTEM
-========================================================== */
-
-
-/* ==========================================================
-   EXTRA LARGE SCREENS
-   1600px+
-========================================================== */
-
-@media(min-width:1600px){
-
-    main{
-
-        width:1400px;
-
-    }
-
-
-    .grid-container{
-
-        grid-template-columns:
-        repeat(4,1fr);
-
-        gap:32px;
-
-    }
-
-}
-
-
-
-/* ==========================================================
-   LARGE DESKTOP
-   1200px - 1599px
-========================================================== */
-
-
-@media(max-width:1200px){
-
-
-    main{
-
-        width:94%;
-
-    }
-
-
-    .grid-container{
-
-        grid-template-columns:
-        repeat(3,1fr);
-
-        gap:26px;
-
-    }
-
-
-}
-
-
-
-/* ==========================================================
-   LAPTOPS
-   992px - 1199px
-========================================================== */
-
-
-@media(max-width:992px){
-
-
-    header{
-
-        padding:90px 25px;
-
-    }
-
-
-
-    .hero-content h1{
-
-        font-size:3.2rem;
-
-    }
-
-
-
-    .grid-container{
-
-        grid-template-columns:
-        repeat(2,1fr);
-
-        gap:24px;
-
-    }
-
-
-
-    .dashboard-grid{
-
-        grid-template-columns:
-        repeat(2,1fr);
-
-    }
-
-
-
-}
-
-
-
-/* ==========================================================
-   TABLETS
-   768px - 991px
-========================================================== */
-
-
-@media(max-width:768px){
-
-
-    body{
-
-        overflow-x:hidden;
-
-    }
-
-
-    main{
-
-        width:92%;
-
-    }
-
-
-
-    /* HERO */
-
-
-    header{
-
-        padding:70px 20px;
-
-    }
-
-
-    .hero-content h1{
-
-        font-size:2.5rem;
-
-    }
-
-
-
-    /* GRID SECTIONS */
-
-
-    .grid-container{
-
-        grid-template-columns:
-        1fr;
-
-        gap:20px;
-
-    }
-
-
-
-    .dashboard-grid{
-
-        grid-template-columns:
-        1fr;
-
-    }
-
-
-
-    .grid-card{
-
-        padding:25px;
-
-    }
-
-
-
-    /* GRID DEMO */
-
-
-    .grid-demo{
-
-        grid-template-columns:
-        1fr;
-
-        gap:18px;
-
-    }
-
-
-
-}
-
-
-
-/* ==========================================================
-   MOBILE
-   480px - 767px
-========================================================== */
-
-
-@media(max-width:480px){
-
-
-    main{
-
-        width:90%;
-
-    }
-
-
-
-    header{
-
-        padding:55px 16px;
-
-    }
-
-
-
-    .hero-badge{
-
-        font-size:.75rem;
-
-        padding:8px 14px;
-
-    }
-
-
-
-    .hero-content h1{
-
-        font-size:2rem;
-
-        line-height:1.2;
-
-    }
-
-
-
-    .hero-content p{
-
-        font-size:.9rem;
-
-    }
-
-
-
-    .section-heading{
-
-        margin:55px auto 35px;
-
-    }
-
-
-
-    .section-heading h2{
-
-        font-size:1.7rem;
-
-    }
-
-
-
-    /* CARDS */
-
-
-    .grid-card{
-
-        padding:20px;
-
-        border-radius:18px;
-
-    }
-
-
-
-    .grid-card h3{
-
-        font-size:1.25rem;
-
-    }
-
-
-
-    /* GRID ITEMS */
-
-
-    .grid-item{
-
-        min-height:140px;
-
-    }
-
-
-
-    /* CTA */
-
-
-    .cta{
-
-        padding:50px 20px;
-
-    }
-
-
-
-    .cta-btn{
-
-        width:100%;
-
-    }
-
-
-
-    /* FOOTER */
-
-
-    .footer-tech{
-
-        grid-template-columns:
-        repeat(2,1fr);
-
-        gap:10px;
-
-    }
-
-
-}
-
-
-
-/* ==========================================================
-   SMALL PHONES
-   360px
-========================================================== */
-
-/* ==========================================================
-   SMALL PHONES
-   360px AND BELOW
-========================================================== */
-
-
-@media(max-width:360px){
-
-
-    body{
-
-        overflow-x:hidden;
-
-    }
-
-
-
-    main{
-
-        width:90%;
-
-    }
-
-
-
-    /* ===========================
-       HERO SECTION
-    =========================== */
-
-
-    .hero-content h1{
-
-        font-size:1.75rem;
-
-        line-height:1.15;
-
-        overflow-wrap:anywhere;
-
-    }
-
-
-    .hero-content p{
-
-        font-size:.85rem;
-
-        line-height:1.5;
-
-    }
-
-
-
-    .hero-badge{
-
-        font-size:.7rem;
-
-        padding:7px 12px;
-
-    }
-
-
-
-    /* ===========================
-       SECTION HEADINGS
-    =========================== */
-
-
-    .section-heading{
-
-        margin:45px auto 30px;
-
-    }
-
-
-    .section-heading h2{
-
-        font-size:1.45rem;
-
-        line-height:1.2;
-
-        overflow-wrap:anywhere;
-
-    }
-
-
-    .section-heading p{
-
-        font-size:.85rem;
-
-    }
-
-
-
-    /* ===========================
-       PRICING CARDS
-    =========================== */
-
-
-    .pricing-section{
-
-
-        grid-template-columns:1fr;
-
-        gap:16px;
-
-        width:100%;
-
-
-    }
-
-
-
-    .pricing-card{
-
-
-        width:100%;
-
-        max-width:100%;
-
-        padding:18px;
-
-        border-radius:18px;
-
-
-    }
-
-
-
-    .pricing-card h3{
-
-
-        font-size:1.2rem;
-
-
-    }
-
-
-
-    .price{
-
-
-        font-size:1.9rem;
-
-
-    }
-
-
-
-    .pricing-card li{
-
-
-        font-size:.8rem;
-
-        padding:9px;
-
-
-    }
-
-
-
-    .pricing-card button{
-
-
-        padding:12px;
-
-        font-size:.85rem;
-
-
-    }
-
-
-
-    /* ===========================
-       GRID PROPERTY SECTION
-    =========================== */
-
-
-    .properties-grid{
-
-
-        grid-template-columns:1fr;
-
-        gap:14px;
-
-
-    }
-
-
-
-    .property-card{
-
-
-        padding:16px;
-
-        border-radius:18px;
-
-
-    }
-
-
-
-    .property-card h3{
-
-
-        font-size:.95rem;
-
-        overflow-wrap:anywhere;
-
-
-    }
-
-
-
-    .property-card p{
-
-
-        font-size:.8rem;
-
-        line-height:1.5;
-
-
-    }
-
-
-
-    /* ===========================
-       GRID DEMO
-    =========================== */
-
-
-    .grid-container,
-    .grid-demo{
-
-
-        grid-template-columns:1fr;
-
-        gap:14px;
-
-
-    }
-
-
-
-    .grid-item{
-
-
-        min-height:110px;
-
-        padding:15px;
-
-        font-size:.85rem;
-
-
-    }
-
-
-
-
-    /* ===========================
-       COMPARISON SECTION
-    =========================== */
-
-
-    .comparison-wrapper{
-
-
-        grid-template-columns:1fr;
-
-        gap:15px;
-
-
-    }
-
-
-
-    .comparison-card{
-
-
-        padding:16px;
-
-        border-radius:18px;
-
-
-    }
-
-
-
-    .comparison-card h3{
-
-
-        font-size:1.1rem;
-
-
-    }
-
-
-
-    .comparison-card ul{
-
-
-        gap:10px;
-
-
-    }
-
-
-
-    .comparison-card li{
-
-
-        font-size:.8rem;
-
-        padding:9px;
-
-
-    }
-
-
-
-
-    /* ===========================
-       CTA SECTION
-    =========================== */
-
-
-    .cta{
-
-
-        padding:45px 18px;
-
-        border-radius:20px;
-
-
-    }
-
-
-
-    .cta h2{
-
-
-        font-size:1.5rem;
-
-        line-height:1.2;
-
-
-    }
-
-
-
-    .cta-btn{
-
-
-        width:100%;
-
-        padding:14px;
-
-
-    }
-
-
-
-
-
-    /* ===========================
-       FOOTER
-    =========================== */
-
-
-    .footer-tech{
-
-
-        grid-template-columns:1fr;
-
-        gap:10px;
-
-
-    }
-
-
-
-    .footer-tech span{
-
-
-        width:100%;
-
-    }
-
-
-
-}
-
-/* ==========================================================
-   FINAL GRID MOBILE FIX
-========================================================== */
-
-
-@media(max-width:768px){
-
-
-    .pricing-grid{
-
-        grid-template-columns:1fr;
-
-        gap:20px;
-
-    }
-
-
-
-    .demo-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-
-    .areas-layout{
-
-
-        grid-template-columns:1fr;
-
-
-        grid-template-areas:
-
-        "header"
-
-        "sidebar"
-
-        "content"
-
-        "footer";
-
-
-    }
-
-
-
-    .area{
-
-        padding:25px;
-
-    }
-
-
-
-    .properties-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-
-    .comparison-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-
-}
-
-
-
-@media(max-width:480px){
-
-
-    .pricing-card{
-
-        padding:20px;
-
-    }
-
-
-
-    .pricing-card h3{
-
-        font-size:1.25rem;
-
-    }
-
-
-
-    .price{
-
-        font-size:2.2rem;
-
-    }
-
-
-
-}
-
-
-
-@media(max-width:360px){
-
-
-    .pricing-card{
-
-        padding:16px;
-
-    }
-
-
-    .demo-box{
-
-        padding:25px;
-
-        font-size:.9rem;
-
-    }
-
-
-    .area{
-
-        padding:20px;
-
-        font-size:.9rem;
-
-    }
-
-
-}
-/* ==========================================================
-   PREMIUM MOBILE EXPERIENCE
-   480px AND BELOW
-========================================================== */
-
-
-@media(max-width:480px){
-
-
-    body{
-
-        overflow-x:hidden;
-
-    }
-
-
-    main{
-
-        width:92%;
-
-    }
-
-
-
-    /* ==========================
-       HERO
-    ========================== */
-
-
-    header{
-
-        padding:55px 18px 65px;
-
-    }
-
-
-    .hero-content{
-
-        width:100%;
-
-    }
-
-
-    .hero-content h1{
-
-        font-size:2rem;
-
-        line-height:1.15;
-
-        letter-spacing:-.5px;
-
-    }
-
-
-    .hero-content p{
-
-        font-size:.9rem;
-
-        line-height:1.6;
-
-    }
-
-
-
-    /* ==========================
-       SECTION HEADINGS
-    ========================== */
-
-
-    .section-heading{
-
-        margin:50px auto 35px;
-
-    }
-
-
-    .section-tag{
-
-        font-size:.7rem;
-
-        padding:7px 14px;
-
-    }
-
-
-    .section-heading h2{
-
-        font-size:1.6rem;
-
-        line-height:1.25;
-
-    }
-
-
-    .section-heading p{
-
-        font-size:.9rem;
-
-    }
-
-
-
-    /* ==========================
-       PRICING CARDS
-    ========================== */
-
-
-    .pricing-grid{
-
-        grid-template-columns:1fr;
-
-        gap:18px;
-
-    }
-
-
-    .pricing-card{
-
-        padding:24px 20px;
-
-        border-radius:20px;
-
-    }
-
-
-    .pricing-card h3{
-
-        font-size:1.35rem;
-
-    }
-
-
-    .price{
-
-        font-size:2.4rem;
-
-    }
-
-
-    .pricing-card li{
-
-        padding:11px;
-
-        font-size:.85rem;
-
-    }
-
-
-    button{
-
-        padding:13px;
-
-        font-size:.9rem;
-
-        border-radius:12px;
-
-    }
-
-
-
-    /* ==========================
-       GRID DEMO
-    ========================== */
-
-
-    .demo-grid{
-
-        grid-template-columns:1fr;
-
-        gap:14px;
-
-    }
-
-
-    .demo-box{
-
-        padding:28px 20px;
-
-        border-radius:18px;
-
-        font-size:.95rem;
-
-    }
-
-
-    .span-two{
-
-        grid-column:auto;
-
-    }
-
-
-
-    /* ==========================
-       GRID AREAS
-    ========================== */
-
-
-    .areas-layout{
-
-
-        grid-template-columns:1fr;
-
-
-        grid-template-areas:
-
-        "header"
-
-        "sidebar"
-
-        "content"
-
-        "footer";
-
-
-        gap:14px;
-
-    }
-
-
-    .area{
-
-        padding:25px 15px;
-
-        border-radius:18px;
-
-    }
-
-
-
-    /* ==========================
-       PROPERTIES
-    ========================== */
-
-
-    .properties-grid{
-
-        grid-template-columns:1fr;
-
-        gap:16px;
-
-    }
-
-
-    .property-card{
-
-        padding:22px;
-
-        border-radius:18px;
-
-    }
-
-
-    .property-card h3{
-
-        font-size:1.1rem;
-
-    }
-
-
-    .property-card p{
-
-        font-size:.85rem;
-
-    }
-
-
-
-    /* ==========================
-       COMPARISON
-    ========================== */
-
-
-    .comparison-grid{
-
-        grid-template-columns:1fr;
-
-        gap:18px;
-
-    }
-
-
-    .comparison-card{
-
-        padding:22px;
-
-        border-radius:20px;
-
-    }
-
-
-    .comparison-card h3{
-
-        font-size:1.3rem;
-
-    }
-
-
-    .comparison-card li{
-
-        padding:11px;
-
-        font-size:.85rem;
-
-    }
-
-
-
-    /* ==========================
-       CTA
-    ========================== */
-
-
-    .cta{
-
-        padding:55px 20px;
-
-        border-radius:22px;
-
-    }
-
-
-    .cta h2{
-
-        font-size:1.7rem;
-
-    }
-
-
-    .cta p{
-
-        font-size:.9rem;
-
-    }
-
-
-    .cta-btn{
-
-        width:100%;
-
-        padding:14px;
-
-    }
-
-
-
-    /* ==========================
-       FOOTER
-    ========================== */
-
-
-    .footer-content{
-
-        padding:50px 15px;
-
-    }
-
-
-    .footer-content h3{
-
-        font-size:1.5rem;
-
-    }
-
-
-    .footer-tech{
-
-        display:grid;
-
-        grid-template-columns:1fr 1fr;
-
-        gap:10px;
-
-    }
-
-
-    .footer-tech span{
-
-        font-size:.8rem;
-
-        padding:8px;
-
-    }
 
 
 }

@@ -5,204 +5,653 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Flexbox & CSS Grid Playground</title>
+    <title>
+        Flexbox & CSS Grid Playground
+    </title>
 
-    <meta
-        name="description"
-        content="Learn the difference between CSS Flexbox and CSS Grid through responsive pricing layouts.">
+
+    <meta name="description"
+    content="A frontend project demonstrating the difference between CSS Flexbox and CSS Grid with responsive layouts.">
+
+
+    <!-- Google Font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+
+    <!-- Font Awesome Icons -->
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <link
-        rel="stylesheet"
-        href="style.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 
+
+
 <body>
+
+
+
+<!-- =================================================
+     HERO SECTION
+================================================= -->
+
 
 <header class="hero">
 
-    <div class="hero-content">
 
-        <span class="badge">
-            🚀 Frontend Development Project
-        </span>
+<div class="hero-content">
 
-        <h1>
-            Responsive Layouts
-        </h1>
 
-        <h2>
-            Flexbox & CSS Grid Playground
-        </h2>
+<span class="badge">
 
-        <p>
-            Learn how modern responsive layouts are built using
-            <strong>CSS Flexbox</strong>
-            and
-            <strong>CSS Grid</strong>.
-            Explore two implementations of the same pricing section and understand
-            when each layout technique should be used.
-        </p>
+<i class="fa-solid fa-code"></i>
 
-    </div>
+Frontend Development 
+
+</span>
+
+
+
+<h1>
+
+Master Responsive Layouts
+
+</h1>
+
+
+<h2>
+
+Flexbox vs CSS Grid Playground
+
+</h2>
+
+
+
+<p>
+
+Understand how modern websites are built using
+
+<strong>CSS Flexbox</strong>
+
+and
+
+<strong>CSS Grid</strong>.
+
+Explore both layout systems through interactive responsive designs.
+
+</p>
+
+
+
+<div class="hero-buttons">
+
+
+<a href="flexbox/index.html" class="btn">
+
+<i class="fa-solid fa-layer-group"></i>
+
+Explore Flexbox
+
+</a>
+
+
+
+<a href="grid/index.html" class="btn secondary-btn">
+
+<i class="fa-solid fa-table-cells"></i>
+
+Explore CSS Grid
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
 
 </header>
 
+
+
+
+
 <main>
+
+
+
+
+<!-- =================================================
+     TECHNOLOGY SECTION
+================================================= -->
+
 
 <section class="technologies">
 
-    <h2>
-        🛠 Technologies Used
-    </h2>
 
-    <p>
-        This project focuses on modern frontend layout techniques used in
-        responsive web development.
-    </p>
+<div class="section-title">
 
-    <div class="tech-list">
 
-        <span>HTML5</span>
+<span>
+TECH STACK
+</span>
 
-        <span>CSS3</span>
 
-        <span>Flexbox</span>
+<h2>
 
-        <span>CSS Grid</span>
+Built With Modern Frontend Technologies
 
-        <span>Media Queries</span>
+</h2>
 
-        <span>Responsive Design</span>
 
-    </div>
+<p>
+
+Core technologies used to create responsive and scalable layouts.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="tech-grid">
+
+
+<div class="tech-card">
+
+
+<i class="fa-brands fa-html5 html"></i>
+
+
+<h3>
+HTML5
+</h3>
+
+
+</div>
+
+
+
+
+<div class="tech-card">
+
+
+<i class="fa-brands fa-css3-alt css"></i>
+
+
+<h3>
+CSS3
+</h3>
+
+
+</div>
+
+
+
+
+<div class="tech-card">
+
+
+<i class="fa-solid fa-box flex"></i>
+
+
+<h3>
+Flexbox
+</h3>
+
+
+</div>
+
+
+
+
+<div class="tech-card">
+
+
+<i class="fa-solid fa-table-cells grid"></i>
+
+
+<h3>
+CSS Grid
+</h3>
+
+
+</div>
+
+
+
+
+<div class="tech-card">
+
+
+<i class="fa-solid fa-mobile-screen mobile"></i>
+
+
+<h3>
+Responsive Design
+</h3>
+
+
+</div>
+
+
+
+</div>
+
+
 
 </section>
 
-<section class="versions">
 
-    <h2>
-        📂 Explore Both Layouts
-    </h2>
 
-    <p>
-        Compare two different CSS layout systems while building the same UI.
-    </p>
 
-    <div class="cards">
 
-        <article class="card">
 
-            <div class="icon">
-                📦
-            </div>
+<!-- =================================================
+     FLEX VS GRID SECTION
+================================================= -->
 
-            <h3>
-                Flexbox Layout
-            </h3>
 
-            <p>
-                Learn how Flexbox organizes content in one dimension. It is ideal
-                for navigation bars, pricing cards, toolbars, and flexible UI
-                components.
-            </p>
+<section class="comparison">
 
-            <a
-                href="flexbox/index.html"
-                class="btn">
 
-                View Flexbox →
 
-            </a>
+<div class="section-title">
 
-        </article>
 
-        <article class="card">
+<span>
+LAYOUT SYSTEMS
+</span>
 
-            <div class="icon">
-                🧩
-            </div>
 
-            <h3>
-                CSS Grid Layout
-            </h3>
+<h2>
 
-            <p>
-                Explore two-dimensional layouts with CSS Grid. Perfect for
-                dashboards, galleries, page layouts, and complex responsive
-                interfaces.
-            </p>
+Two Ways To Build Modern Layouts
 
-            <a
-                href="grid/index.html"
-                class="btn">
+</h2>
 
-                View CSS Grid →
 
-            </a>
+<p>
 
-        </article>
+Same goal, different approach.
 
-    </div>
+Learn when to use Flexbox and when to choose CSS Grid.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="cards">
+
+
+
+<article class="card flex-card">
+
+
+
+<div class="card-icon">
+
+<i class="fa-solid fa-arrows-left-right"></i>
+
+</div>
+
+
+
+<h3>
+
+Flexbox Layout
+
+</h3>
+
+
+
+<p>
+
+A one-dimensional layout system.
+
+Perfect for navigation bars, buttons, cards,
+and arranging elements in rows or columns.
+
+</p>
+
+
+
+<ul>
+
+
+<li>
+✓ One direction layout
+</li>
+
+
+<li>
+✓ Content based sizing
+</li>
+
+
+<li>
+✓ Great for components
+</li>
+
+
+</ul>
+
+
+
+<a href="flexbox/index.html" class="btn">
+
+
+View Flexbox
+
+
+<i class="fa-solid fa-arrow-right"></i>
+
+
+</a>
+
+
+
+</article>
+
+
+
+
+
+
+
+
+
+<article class="card grid-card">
+
+
+
+<div class="card-icon">
+
+<i class="fa-solid fa-grip"></i>
+
+</div>
+
+
+
+<h3>
+
+CSS Grid Layout
+
+</h3>
+
+
+
+<p>
+
+A two-dimensional layout system.
+
+Best for complete page structures,
+dashboards and complex designs.
+
+</p>
+
+
+
+<ul>
+
+
+<li>
+✓ Rows and columns
+</li>
+
+
+<li>
+✓ Powerful positioning
+</li>
+
+
+<li>
+✓ Complex layouts
+</li>
+
+
+</ul>
+
+
+
+<a href="grid/index.html" class="btn">
+
+
+View CSS Grid
+
+
+<i class="fa-solid fa-arrow-right"></i>
+
+
+</a>
+
+
+
+</article>
+
+
+
+
+</div>
+
+
 
 </section>
+
+
+
+
+
+
+
+<!-- =================================================
+     LEARNING OUTCOMES
+================================================= -->
+
 
 <section class="learning">
 
-    <h2>
-        📚 Learning Outcomes
-    </h2>
 
-    <p>
-        By completing this project you will gain practical experience with
-        responsive layout techniques.
-    </p>
+<div class="section-title">
 
-    <div class="learn-grid">
 
-        <div>✅ Flexbox Layouts</div>
+<span>
+SKILLS GAINED
+</span>
 
-        <div>✅ CSS Grid Layouts</div>
 
-        <div>✅ Responsive Design</div>
+<h2>
 
-        <div>✅ Media Queries</div>
+What This Project Covers
 
-        <div>✅ Modern UI Design</div>
+</h2>
 
-        <div>✅ Layout Comparison</div>
 
-    </div>
+</div>
+
+
+
+<div class="learn-grid">
+
+
+<div>
+<i class="fa-solid fa-check"></i>
+Responsive Layouts
+</div>
+
+
+<div>
+<i class="fa-solid fa-check"></i>
+Flexbox Concepts
+</div>
+
+
+<div>
+<i class="fa-solid fa-check"></i>
+CSS Grid Concepts
+</div>
+
+
+<div>
+<i class="fa-solid fa-check"></i>
+Media Queries
+</div>
+
+
+<div>
+<i class="fa-solid fa-check"></i>
+Modern UI Design
+</div>
+
+
+<div>
+<i class="fa-solid fa-check"></i>
+Layout Comparison
+</div>
+
+
+
+</div>
+
+
 
 </section>
 
+
+
+
 </main>
+
+
+
+
+
+
+
+<!-- =================================================
+     FOOTER
+================================================= -->
+
 
 <footer>
 
-    <p>
 
-        Made with ❤️ by
 
-        <strong>Eisha Naeem</strong>
+<div class="footer-content">
 
-    </p>
+
+
+<h3>
+
+Frontend Layout Playground
+
+</h3>
+
+
+
+<p>
+
+Built with modern web technologies while exploring responsive design principles.
+
+</p>
+
+
+
+
+<div class="footer-tech">
+
+
+
+<div class="tech-icon">
+
+<i class="fa-brands fa-html5"></i>
+
+</div>
+
+
+
+
+<div class="tech-icon">
+
+<i class="fa-brands fa-css3-alt"></i>
+
+</div>
+
+
+
+
+<div class="tech-icon">
+
+<i class="fa-solid fa-box"></i>
+
+</div>
+
+
+
+
+<div class="tech-icon">
+
+<i class="fa-solid fa-table-cells"></i>
+
+</div>
+
+
+
+
+<div class="tech-icon">
+
+<i class="fa-solid fa-mobile-screen"></i>
+
+</div>
+
+
+
+</div>
+
+
+
+<p class="copyright">
+
+© 2026  Learn • Build • Experiment with Modern Frontend Layouts
+
+</p>
+
+
+
+</div>
+
 
 </footer>
+
+
+
 
 </body>
 

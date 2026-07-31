@@ -25,8 +25,6 @@
 ![Flexbox Layout](assets/images/layout-flexbox.png)
 
 
-
-
 ## CSS Grid Layout
 ![CSS Grid Layout](assets/images/layout-grid.png)
 
@@ -52,7 +50,10 @@ Through this project, I practiced:
 # 🌐 Live Demo
 
 
+## 🚀 Live Demo
 
+🔗 **View Project Online:**  
+[Flexbox & CSS Grid Playground](https://eisha017.github.io/flexbox-grid-playground/)
 
 ---
 

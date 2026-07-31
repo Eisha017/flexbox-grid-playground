@@ -854,29 +854,19 @@ footer{
 
     margin:auto;
 
-    padding:70px 20px;
+    padding:60px 20px;
 
     text-align:center;
 
 }
 
-.footer-content h3{
-
-    font-size:2rem;
-
-    margin-bottom:15px;
-
-}
 
 .footer-content p{
 
     color:#cbd5e1;
 
-    max-width:700px;
-
-    margin:0 auto 25px;
-
 }
+
 
 .footer-tech{
 
@@ -892,37 +882,105 @@ footer{
 
 }
 
-.footer-tech span{
+
+.tech-icon{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:12px;
 
     background:rgba(255,255,255,.08);
 
-    border:1px solid rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.15);
 
-    padding:10px 18px;
-
-    border-radius:999px;
-
-    font-size:.9rem;
-
-    transition:var(--transition);
+    transition:.3s ease;
 
 }
 
-.footer-tech span:hover{
 
-    background:var(--primary);
+.tech-icon i{
 
-    border-color:var(--primary);
+    font-size:1.2rem;
 
 }
+
+
+/* HTML */
+
+.tech-icon:nth-child(1) i{
+
+    color:#e34f26;
+
+}
+
+
+/* CSS */
+
+.tech-icon:nth-child(2) i{
+
+    color:#1572b6;
+
+}
+
+
+/* Flexbox */
+
+.tech-icon:nth-child(3) i{
+
+    color:#f59e0b;
+
+}
+
+
+/* Responsive */
+
+.tech-icon:nth-child(4) i{
+
+    color:#22c55e;
+
+}
+
+
+/* Code */
+
+.tech-icon:nth-child(5) i{
+
+    color:#facc15;
+
+}
+
+
+
+.tech-icon:hover{
+
+    transform:translateY(-5px);
+
+    background:white;
+
+}
+
+
+.tech-icon:hover i{
+
+    transform:scale(1.15);
+
+}
+
+
 
 .copyright{
 
-    font-size:.9rem;
+    margin-top:25px;
 
-    color:#94a3b8;
-
-    margin-top:20px;
+    font-size:.85rem;
 
 }
 
