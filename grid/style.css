@@ -1351,3 +1351,132 @@ button:active,
 
 
 }
+
+/* ==========================================
+   FINAL GRID MOBILE OPTIMIZATION
+========================================== */
+
+@media(max-width:600px){
+
+    header{
+        padding:60px 18px;
+    }
+
+
+    .hero-content h1{
+        font-size:2.1rem;
+    }
+
+
+    .hero-content p{
+        font-size:.95rem;
+    }
+
+
+    main{
+        width:92%;
+    }
+
+
+    .pricing-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+    .pricing-card{
+
+        padding:24px;
+
+        min-height:auto;
+
+    }
+
+
+    .featured{
+
+        transform:none;
+
+    }
+
+
+    .featured:hover{
+
+        transform:translateY(-8px);
+
+    }
+
+
+    .demo-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:12px;
+
+    }
+
+
+    .demo-box{
+
+        min-height:90px;
+
+        padding:18px 8px;
+
+        font-size:.85rem;
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+    }
+
+
+    .span-two{
+
+        grid-column:span 2;
+
+    }
+
+
+    .areas-layout{
+
+        gap:12px;
+
+    }
+
+
+    .area{
+
+        padding:25px;
+
+        font-size:.9rem;
+
+    }
+
+
+    .property-card{
+
+        padding:22px;
+
+    }
+
+
+    .comparison-card{
+
+        padding:22px;
+
+    }
+
+
+    .cta{
+
+        padding:50px 20px;
+
+    }
+
+}
