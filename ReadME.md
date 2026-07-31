@@ -70,9 +70,9 @@ Through this project, I practiced:
 
 # 👩‍💻 Author
 
-**Eisha Naeem**
+## Eisha Naeem
 
-Computer Engineer 
+### Computer Engineer 
 
 
 
