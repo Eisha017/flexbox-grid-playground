@@ -1059,14 +1059,51 @@ button:active,
 
 }
 /* ==========================================================
-   RESPONSIVE DESIGN
+   RESPONSIVE SYSTEM
+   Flexbox Playground
 ========================================================== */
 
-/* ===========================
-   Large Laptops
-=========================== */
+
+/* ==========================================================
+   EXTRA LARGE SCREENS
+   1600px+
+========================================================== */
+
+@media (min-width:1600px){
+
+    main{
+
+        width:1400px;
+
+    }
+
+
+    .pricing-card{
+
+        max-width:320px;
+
+    }
+
+
+    .hero-content{
+
+        max-width:1100px;
+
+    }
+
+
+}
+
+
+
+/* ==========================================================
+   LARGE DESKTOP
+   1200px - 1599px
+========================================================== */
+
 
 @media (max-width:1200px){
+
 
     main{
 
@@ -1074,25 +1111,6 @@ button:active,
 
     }
 
-    .pricing-card{
-
-        max-width:300px;
-
-    }
-
-}
-
-/* ===========================
-   Tablets
-=========================== */
-
-@media (max-width:992px){
-
-    header{
-
-        padding:90px 20px;
-
-    }
 
     .pricing-section{
 
@@ -1100,25 +1118,64 @@ button:active,
 
     }
 
+
+    .pricing-card{
+
+        flex:1 1 280px;
+
+    }
+
+
+    .section-heading h2{
+
+        font-size:2.5rem;
+
+    }
+
+
+}
+
+
+
+/* ==========================================================
+   LAPTOPS
+   992px - 1199px
+========================================================== */
+
+
+@media (max-width:992px){
+
+
+    header{
+
+        padding:90px 25px;
+
+    }
+
+
+    .hero-content h1{
+
+        font-size:3.2rem;
+
+    }
+
+
+
+    /* Pricing */
+
+
     .pricing-card{
 
         flex:1 1 320px;
 
-        max-width:340px;
+        max-width:350px;
 
     }
 
-    .popular{
 
-        transform:none;
 
-    }
+    /* Features */
 
-    .popular:hover{
-
-        transform:translateY(-10px);
-
-    }
 
     .feature-box{
 
@@ -1128,6 +1185,11 @@ button:active,
 
     }
 
+
+
+    /* Properties */
+
+
     .property-card{
 
         flex:1 1 320px;
@@ -1136,25 +1198,56 @@ button:active,
 
     }
 
+
+
+    /* Comparison */
+
+
     .comparison-card{
 
         flex:1 1 320px;
 
     }
 
+
 }
 
-/* ===========================
-   Mobile Landscape
-=========================== */
+
+
+/* ==========================================================
+   TABLETS
+   768px - 991px
+========================================================== */
+
 
 @media (max-width:768px){
 
-    header{
 
-        padding:75px 20px;
+    body{
+
+        overflow-x:hidden;
 
     }
+
+
+
+    main{
+
+        width:92%;
+
+    }
+
+
+
+    /* HERO */
+
+
+    header{
+
+        padding:70px 20px;
+
+    }
+
 
     .hero-content h1{
 
@@ -1162,274 +1255,50 @@ button:active,
 
     }
 
+
     .hero-content p{
 
         font-size:1rem;
 
     }
 
+
+
+    /* HEADINGS */
+
+
     .section-heading{
 
-        margin:70px auto 45px;
+        margin:60px auto 40px;
 
     }
 
-    .pricing-section{
 
-        gap:20px;
-
-    }
-
-    .pricing-card{
-
-        flex:1 1 100%;
-
-        max-width:100%;
-
-        padding:26px;
-
-    }
-
-    .price{
-
-        font-size:2.5rem;
-
-    }
-
-    .feature-box{
-
-        flex:1 1 100%;
-
-    }
-
-    .property-card{
-
-        flex:1 1 100%;
-
-    }
-
-    .comparison-card{
-
-        flex:1 1 100%;
-
-    }
-
-    .demo-row{
-
-        gap:14px;
-
-    }
-
-    .demo-item{
-
-        flex:1 1 calc(50% - 14px);
-
-        max-width:none;
-
-    }
-
-    .cta{
-
-        padding:70px 24px;
-
-    }
-
-    .footer-content{
-
-        padding:55px 20px;
-
-    }
-
-}
-
-/* ===========================
-   Small Phones
-=========================== */
-
-@media (max-width:480px){
-
-    header{
-
-        padding:65px 18px;
-
-    }
-
-    .hero-badge{
-
-        font-size:.8rem;
-
-        padding:8px 16px;
-
-    }
-
-    .hero-content h1{
-
-        font-size:2.1rem;
-
-    }
-
-    .hero-content p{
-
-        font-size:.95rem;
-
-    }
-
-    .pricing-card{
-
-        padding:22px;
-
-    }
-
-    .pricing-card h3{
-
-        font-size:1.35rem;
-
-    }
-
-    .price{
-
-        font-size:2.2rem;
-
-    }
-
-    .pricing-card li{
-
-        font-size:.9rem;
-
-        padding:12px;
-
-    }
-
-    button{
-
-        padding:14px;
-
-    }
-
-    .demo-row{
-
-        flex-direction:column;
-
-    }
-
-    .demo-item{
-
-        width:100%;
-
-        flex:1 1 100%;
-
-    }
-
-    .feature-icon{
-
-        width:64px;
-
-        height:64px;
-
-        font-size:1.7rem;
-
-    }
-
-    .cta{
-
-        padding:60px 18px;
-
-    }
-
-    .cta h2{
-
-        font-size:1.8rem;
-
-    }
-
-    .cta-btn{
-
-        width:100%;
-
-    }
-
-    .footer-tech{
-
-        gap:10px;
-
-    }
-
-    .footer-tech span{
-
-        width:100%;
-
-    }
-
-}
-
-/* ===========================
-   Very Large Screens
-=========================== */
-
-@media (min-width:1600px){
-
-    main{
-
-        max-width:1400px;
-
-    }
-
-    .pricing-card{
-
-        max-width:310px;
-
-    }
-
-    .hero-content{
-
-        max-width:1000px;
-
-    }
-
-}
-/* ==========================================
-   FINAL FLEXBOX MOBILE OPTIMIZATION
-========================================== */
-
-@media(max-width:600px){
-
-    header{
-
-        padding:60px 18px;
-
-    }
-
-
-    header h1{
+    .section-heading h2{
 
         font-size:2rem;
 
     }
 
 
-    header p{
 
-        font-size:.95rem;
-
-    }
+    /* PRICING */
 
 
     .pricing-section{
 
-        padding:45px 18px;
+        flex-direction:column;
 
-        gap:20px;
+        align-items:center;
 
     }
 
 
     .pricing-card{
 
-        flex:1 1 100%;
+        width:100%;
 
-        max-width:100%;
-
-        min-height:auto;
+        max-width:360px;
 
         padding:25px;
 
@@ -1443,55 +1312,313 @@ button:active,
     }
 
 
-    .popular:hover{
 
-        transform:translateY(-8px);
-
-    }
-
-
-    .price{
-
-        font-size:2.2rem;
-
-    }
-
-
-    li{
-
-        padding:10px;
-
-        font-size:.9rem;
-
-    }
-
-
-    button{
-
-        padding:13px;
-
-    }
+    /* FEATURES */
 
 
     .features{
 
-        padding:30px 18px;
+        flex-direction:column;
 
-        gap:18px;
+        align-items:center;
 
     }
 
 
     .feature-box{
 
-        padding:22px;
+        width:100%;
+
+        max-width:360px;
 
     }
 
 
+
+    /* DEMO */
+
+
+    .demo-row{
+
+        flex-direction:column;
+
+    }
+
+
+    .demo-item{
+
+        width:100%;
+
+        max-width:none;
+
+        min-height:100px;
+
+    }
+
+
+
+    /* PROPERTIES */
+
+
+    .properties-grid{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+    .property-card{
+
+        width:100%;
+
+        max-width:360px;
+
+    }
+
+
+
+    /* COMPARISON */
+
+
+    .comparison-wrapper{
+
+        flex-direction:column;
+
+    }
+
+
+    .comparison-card{
+
+        width:100%;
+
+    }
+
+
+
+    /* CTA */
+
+
     .cta{
 
-        padding:55px 18px;
+        padding:60px 25px;
+
+    }
+
+
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+   480px - 767px
+========================================================== */
+
+
+@media(max-width:480px){
+
+
+    main{
+
+        width:90%;
+
+    }
+
+
+
+    header{
+
+        padding:55px 16px;
+
+    }
+
+
+
+    .hero-badge{
+
+        font-size:.75rem;
+
+        padding:8px 14px;
+
+    }
+
+
+
+    .hero-content h1{
+
+        font-size:2rem;
+
+    }
+
+
+
+    .hero-content p{
+
+        font-size:.9rem;
+
+    }
+
+
+
+    .section-heading h2{
+
+        font-size:1.7rem;
+
+    }
+
+
+
+    .section-heading p{
+
+        font-size:.9rem;
+
+    }
+
+
+
+    /* Cards */
+
+
+    .pricing-card,
+    .feature-box,
+    .property-card,
+    .comparison-card{
+
+        padding:20px;
+
+        border-radius:18px;
+
+    }
+
+
+
+    .pricing-card h3{
+
+        font-size:1.3rem;
+
+    }
+
+
+
+    .price{
+
+        font-size:2.1rem;
+
+    }
+
+
+
+    /* Demo */
+
+
+    .demo-row{
+
+        padding:15px;
+
+        gap:12px;
+
+    }
+
+
+
+    .demo-item{
+
+        min-height:90px;
+
+    }
+
+
+
+    /* CTA */
+
+
+    .cta h2{
+
+        font-size:1.6rem;
+
+    }
+
+
+    .cta-btn{
+
+        width:100%;
+
+    }
+
+
+
+    /* Footer */
+
+
+    .footer-tech{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+
+}
+
+
+
+/* ==========================================================
+   SMALL PHONES
+   360px - 479px
+========================================================== */
+
+
+@media(max-width:360px){
+
+
+    main{
+
+        width:88%;
+
+    }
+
+
+
+    .hero-content h1{
+
+        font-size:1.8rem;
+
+    }
+
+
+
+    .hero-content p{
+
+        font-size:.85rem;
+
+    }
+
+
+
+    .pricing-card,
+    .feature-box,
+    .property-card,
+    .comparison-card{
+
+        padding:18px;
+
+    }
+
+
+
+    .price{
+
+        font-size:1.9rem;
+
+    }
+
+
+
+    .footer-tech{
+
+        grid-template-columns:1fr;
 
     }
 

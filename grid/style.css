@@ -1012,15 +1012,46 @@ button:active,
 }
 
 /* ==========================================================
-   RESPONSIVE DESIGN
+   CSS GRID PLAYGROUND
+   RESPONSIVE SYSTEM
 ========================================================== */
 
 
-/* ===========================
-   Large Screens
-=========================== */
+/* ==========================================================
+   EXTRA LARGE SCREENS
+   1600px+
+========================================================== */
 
-@media (max-width:1200px){
+@media(min-width:1600px){
+
+    main{
+
+        width:1400px;
+
+    }
+
+
+    .grid-container{
+
+        grid-template-columns:
+        repeat(4,1fr);
+
+        gap:32px;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   LARGE DESKTOP
+   1200px - 1599px
+========================================================== */
+
+
+@media(max-width:1200px){
+
 
     main{
 
@@ -1029,86 +1060,99 @@ button:active,
     }
 
 
-    .pricing-grid{
+    .grid-container{
+
+        grid-template-columns:
+        repeat(3,1fr);
+
+        gap:26px;
+
+    }
+
+
+}
+
+
+
+/* ==========================================================
+   LAPTOPS
+   992px - 1199px
+========================================================== */
+
+
+@media(max-width:992px){
+
+
+    header{
+
+        padding:90px 25px;
+
+    }
+
+
+
+    .hero-content h1{
+
+        font-size:3.2rem;
+
+    }
+
+
+
+    .grid-container{
+
+        grid-template-columns:
+        repeat(2,1fr);
 
         gap:24px;
 
     }
 
 
-}
 
-
-
-/* ===========================
-   Tablets
-=========================== */
-
-@media (max-width:992px){
-
-
-    .pricing-grid{
+    .dashboard-grid{
 
         grid-template-columns:
-            repeat(2,1fr);
+        repeat(2,1fr);
 
     }
 
-
-    .featured{
-
-        transform:none;
-
-    }
-
-
-    .featured:hover{
-
-        transform:translateY(-10px);
-
-    }
-
-
-    .properties-grid{
-
-        grid-template-columns:
-            repeat(2,1fr);
-
-    }
-
-
-    .areas-layout{
-
-        grid-template-columns:1fr;
-
-
-        grid-template-areas:
-
-            "header"
-
-            "sidebar"
-
-            "content"
-
-            "footer";
-
-    }
 
 
 }
 
 
 
-/* ===========================
-   Mobile Devices
-=========================== */
+/* ==========================================================
+   TABLETS
+   768px - 991px
+========================================================== */
 
-@media (max-width:768px){
+
+@media(max-width:768px){
+
+
+    body{
+
+        overflow-x:hidden;
+
+    }
+
+
+    main{
+
+        width:92%;
+
+    }
+
+
+
+    /* HERO */
 
 
     header{
 
-        padding:80px 20px;
+        padding:70px 20px;
 
     }
 
@@ -1120,188 +1164,166 @@ button:active,
     }
 
 
-    .hero-content p{
 
-        font-size:1rem;
-
-    }
+    /* GRID SECTIONS */
 
 
-    .section-heading{
+    .grid-container{
 
-        margin:65px auto 45px;
+        grid-template-columns:
+        1fr;
 
-    }
-
-
-    .pricing-grid{
-
-        grid-template-columns:1fr;
-
-        gap:22px;
+        gap:20px;
 
     }
 
 
-    .pricing-card{
+
+    .dashboard-grid{
+
+        grid-template-columns:
+        1fr;
+
+    }
+
+
+
+    .grid-card{
 
         padding:25px;
 
     }
 
 
-    .price{
 
-        font-size:2.5rem;
-
-    }
+    /* GRID DEMO */
 
 
-    .demo-grid{
+    .grid-demo{
 
         grid-template-columns:
-            repeat(2,1fr);
+        1fr;
+
+        gap:18px;
 
     }
 
-
-    .span-two{
-
-        grid-column:span 2;
-
-    }
-
-
-    .properties-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .comparison-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .area{
-
-        padding:30px;
-
-    }
-
-
-    .cta{
-
-        padding:70px 25px;
-
-    }
 
 
 }
 
 
 
-/* ===========================
-   Small Phones
-=========================== */
+/* ==========================================================
+   MOBILE
+   480px - 767px
+========================================================== */
 
-@media (max-width:480px){
+
+@media(max-width:480px){
 
 
-    header{
+    main{
 
-        padding:65px 18px;
+        width:90%;
 
     }
 
 
+
+    header{
+
+        padding:55px 16px;
+
+    }
+
+
+
     .hero-badge{
 
-        font-size:.8rem;
+        font-size:.75rem;
 
         padding:8px 14px;
 
     }
 
 
+
     .hero-content h1{
 
         font-size:2rem;
 
-    }
-
-
-    .section-heading h2{
-
-        font-size:1.8rem;
+        line-height:1.2;
 
     }
 
 
-    .pricing-card{
 
-        padding:22px;
-
-    }
-
-
-    .pricing-card h3{
-
-        font-size:1.35rem;
-
-    }
-
-
-    .price{
-
-        font-size:2.2rem;
-
-    }
-
-
-    .pricing-card li{
+    .hero-content p{
 
         font-size:.9rem;
 
     }
 
 
-    button{
 
-        padding:14px;
+    .section-heading{
 
-    }
-
-
-    .demo-grid{
-
-        grid-template-columns:1fr;
+        margin:55px auto 35px;
 
     }
 
 
-    .span-two{
 
-        grid-column:auto;
+    .section-heading h2{
+
+        font-size:1.7rem;
+
+    }
+
+
+
+    /* CARDS */
+
+
+    .grid-card{
+
+        padding:20px;
+
+        border-radius:18px;
 
     }
 
 
-    .demo-box{
 
-        padding:28px;
+    .grid-card h3{
+
+        font-size:1.25rem;
 
     }
+
+
+
+    /* GRID ITEMS */
+
+
+    .grid-item{
+
+        min-height:140px;
+
+    }
+
+
+
+    /* CTA */
 
 
     .cta{
 
-        padding:55px 18px;
+        padding:50px 20px;
 
     }
+
 
 
     .cta-btn{
@@ -1311,16 +1333,16 @@ button:active,
     }
 
 
+
+    /* FOOTER */
+
+
     .footer-tech{
 
-        flex-direction:column;
+        grid-template-columns:
+        repeat(2,1fr);
 
-    }
-
-
-    .footer-tech span{
-
-        width:100%;
+        gap:10px;
 
     }
 
@@ -1329,154 +1351,53 @@ button:active,
 
 
 
-/* ===========================
-   Very Large Screens
-=========================== */
+/* ==========================================================
+   SMALL PHONES
+   360px
+========================================================== */
 
-@media (min-width:1600px){
+
+@media(max-width:360px){
 
 
     main{
 
-        max-width:1400px;
+        width:88%;
 
     }
 
-
-    .pricing-grid{
-
-        gap:35px;
-
-    }
-
-
-}
-
-/* ==========================================
-   FINAL GRID MOBILE OPTIMIZATION
-========================================== */
-
-@media(max-width:600px){
-
-    header{
-        padding:60px 18px;
-    }
 
 
     .hero-content h1{
-        font-size:2.1rem;
-    }
 
-
-    .hero-content p{
-        font-size:.95rem;
-    }
-
-
-    main{
-        width:92%;
-    }
-
-
-    .pricing-grid{
-
-        grid-template-columns:1fr;
-
-        gap:20px;
+        font-size:1.8rem;
 
     }
 
 
-    .pricing-card{
 
-        padding:24px;
+    .section-heading h2{
 
-        min-height:auto;
-
-    }
-
-
-    .featured{
-
-        transform:none;
+        font-size:1.5rem;
 
     }
 
 
-    .featured:hover{
 
-        transform:translateY(-8px);
+    .grid-card{
 
-    }
-
-
-    .demo-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-        gap:12px;
+        padding:18px;
 
     }
 
 
-    .demo-box{
 
-        min-height:90px;
+    .footer-tech{
 
-        padding:18px 8px;
-
-        font-size:.85rem;
-
-        display:flex;
-
-        justify-content:center;
-
-        align-items:center;
+        grid-template-columns:
+        1fr;
 
     }
 
-
-    .span-two{
-
-        grid-column:span 2;
-
-    }
-
-
-    .areas-layout{
-
-        gap:12px;
-
-    }
-
-
-    .area{
-
-        padding:25px;
-
-        font-size:.9rem;
-
-    }
-
-
-    .property-card{
-
-        padding:22px;
-
-    }
-
-
-    .comparison-card{
-
-        padding:22px;
-
-    }
-
-
-    .cta{
-
-        padding:50px 20px;
-
-    }
 
 }
